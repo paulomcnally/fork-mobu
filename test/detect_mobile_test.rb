@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MobuFake
+class ForkMobuFake
   class << self
     def before_filter(*args) end
     def helper_method(*methods) end
@@ -10,13 +10,13 @@ class MobuFake
     {}
   end
 
-  include Mobu::DetectMobile
+  include ForkMobu::DetectMobile
 end
 
 class Rails
 end
 
-class MobuTest < MiniTest::Spec
+class ForkMobuTest < MiniTest::Spec
 
   IPAD_USER_AGENT = "Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10"
   IPHONE_USER_AGENT = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5"

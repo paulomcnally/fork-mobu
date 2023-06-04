@@ -1,0 +1,3 @@
+module ForkMobu
+  VERSION = "0.0.1"
+end

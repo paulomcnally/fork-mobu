@@ -5,7 +5,7 @@ end
 
 require 'minitest/autorun'
 require 'mocha/mini_test'
-require 'mobu'
+require 'fork_mobu'
 
 class MockCookies < Hash
   attr_accessor :permanent
